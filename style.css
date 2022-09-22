@@ -24,7 +24,7 @@ html{
     background-color: #111;
 }
 .navbar.sticky{
-     background: #260080;
+     background: #00804b;
      padding: 15px 0;
 }
 .navbar .max-width{
@@ -351,13 +351,6 @@ section .title::after{
 .teams .title::after{
     content: "Minha evolução";
 }
-.teams .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
 .teams .carousel .card:hover{
     background: #00804b;
 }
@@ -423,9 +416,7 @@ section .title::after{
 
 
 /*  sessão Contato  */
-.contact .title::after{
-    content: "Fale conosco";
-}
+
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
@@ -628,11 +619,12 @@ footer span a:hover{
         width:100%;
     }
 }
-@media (max-width: 500px){
-    .home .home-content .text-2{
-        font-size: 50px;
+
+@media (max-width: 515px) {
+    section .title::after {
+        z-index: -1;
     }
-    .home .home-content .text-3{
-        font-size: 27px;
-    }
+
+    .contact .title::after {}
+
 }
